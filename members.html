@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Team Aqua {{ member_rank }}{% endblock %}
+
+{% block content %}
+<h1>The {{ member_rank }} of Team Aqua</h1>
+<div class="container">
+    <ul class="myUL">
+    {% for member in members[member_rank] %}
+        <li><a href='/members/{{ member_rank }}/{{ loop.index0 }}'>{{ member.name }}</a></li>
+    {% endfor %}
+    </ul>
+</div>
+
+{% endblock %}

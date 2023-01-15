@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}Team Aqua{% endblock %}
+
+{% block content %}
+    <h1>Team Aqua</h1>
+    <h3>All life depends on the sea. The sea is everything!<br><a href="/members/Leader/0">-Aqua Leader Archie</a></h3>
+    <br>
+    <h2>Team Logo</h2>
+    <img src="https://archives.bulbagarden.net/media/upload/c/c6/Team_Aqua_Logo_RSE.png" height="200"><br><br><br>
+    <h2>Team Goal: Capture Kyogre to shower the world in a torrential rain and return everything to the sea!</h2>
+    <img src="{{ url_for('static', filename='Kyogre.png') }}">
+    <h3>Kyogre</h3>
+    
+{% endblock %}
